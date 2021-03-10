@@ -1,0 +1,31 @@
+const person = {
+    firstName: 'Asabeneh',
+    lastName: 'Yatayeh',
+    age: 25,
+    country: 'Finland',
+    job: 'Instructor and developer',
+    skills: [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'React',
+        'Redux',
+        'Node',
+        'MongoDB',
+        'Python',
+        'D3.JS'
+    ],
+    languages: ['Amharic', 'English', 'Suomi(Finnish)'],
+
+    getPersonInfo() {
+        const {firstName, lastName, age, country, job, skills: [skillOne, skillTwo, skillThree, skillFour, skillFive, skillSix, skillSeven, skillEight, skillNine], languages: [langOne, langTwo, langThree]} = person;
+
+        console.log(`${firstName} ${lastName} lives in ${country}. He is ${age} years old. He is an ${job}. He teaches ${skillOne}, ${skillTwo}, ${skillThree}, ${skillFour}, ${skillFive}, ${skillSix}, ${skillSeven}, ${skillEight} and ${skillNine}. He speaks ${langOne}, ${langTwo} and a little bit of ${langThree}`);
+    },
+
+    getPersonInfo2() {
+        console.log(`${person.firstName} ${person.lastName} lives in ${person.country}. He is ${person.age} years old. He is an ${person.job}. He teaches ${person.skills[0]}, ${person.skills[1]}, ${person.skills[2]}, ${person.skills[3]}, ${person.skills[4]}, ${person.skills[5]}, ${person.skills[6]}, ${person.skills[7]} and ${person.skills[8]}. He speaks ${person.languages[0]}, ${person.languages[1]} and a little bit of ${person.languages[2]}`);
+    }
+}
+
+person.getPersonInfo2();
