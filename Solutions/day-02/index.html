@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Days of React Challenge</title>
+</head>
+<body>
+    <div class = "root"></div>
+    
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type = "text/babel">
+    // A JSX element is an element from JSX, a syntax extension of JavaScript that allows us to write HTML in React and describe what the UI should look like.
+    
+        const rootElement = document.querySelector('.root')
+
+        const name = <p>Motunrayo Ilawole</p>
+        const myName = 'Motunrayo Ilawole';
+        const myCountry = 'Nigeria';
+        const myTitle = 'Miss';
+        const myGender = 'Female';
+
+        const mainStyle = {
+            backgroundColor: '#F3F0F5'
+        }
+
+        const footerStyle = {
+            backgroundColor: '#61DBFB'
+        }
+
+        const appStyle = {
+            padding: 0,
+            margin: 0
+        }
+
+        const main = (
+            <main style = {mainStyle}>
+                <h1>{myName}</h1>
+                <p>{myCountry}</p>
+                <p>{myTitle}</p>
+                <p>{myGender}</p>
+                <p>tunrayoilawole99@gmail.com</p>
+                <p>+2347013752327</p>
+            </main>
+        );
+
+        const footer = (
+            <footer style = {mainStyle}>
+                <p>&copy; something</p>
+            </footer>
+        );
+
+        const app = (
+            <div>
+                {main}
+                {footer}
+            </div>
+        )
+
+
+        ReactDOM.render(app, rootElement);
+    </script>
+</body>
+</html>
