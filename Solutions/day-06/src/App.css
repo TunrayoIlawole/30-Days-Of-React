@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* Day six */
+.numbers-box {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  gap: 2px;
+}
+
+.number-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  font-size: 1.2rem;
+  color: #FFF;
+}
+
+.country-info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.country {
+  text-transform: uppercase;
+}
+
+.pop-box {
+  height: 100%;
+  background-color: goldenrod;
+}
