@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <h1>30 Days Of React</h1>
-      <App3 />
+      <App2 numbers = {numbers} />
     </div>
   );
 }
