@@ -2,7 +2,6 @@ import React from 'react';
 import Population from './Population';
 import highestPopulation from '../highestPopulation';
 
-console.log(highestPopulation);
 const worldCount = highestPopulation[0].population;
 
 const Populations = () => {
