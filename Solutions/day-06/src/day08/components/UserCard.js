@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from './Header';
+
 import me from '../../images/me.jpeg';
 
 class UserCard extends Component {
@@ -80,12 +82,8 @@ class UserCard extends Component {
 
         return (
             <div className = "user-card" style = {myStyle}>
-                <div className = "header" style = {headerStyle}>
-                    <h1>Welcome to 30 Days Of React</h1>
-                    <h2>Getting Started React</h2>
-                    <p>Motunrayo Ilawole</p>
-                    <p>{this.state.time}</p>
-                </div>
+                <Header time = {this.state.time} styleHeader = {headerStyle} />
+
                 <div className = "main">
                     <h3>Prerequisite to get started with react.js</h3>
                     <ul>
