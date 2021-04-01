@@ -6,6 +6,8 @@ import App2 from './day06/components/App2';
 import App3 from './day06/components/App3';
 import App4 from './day08/components/App4'
 import App5 from './day08/components/App5';
+import App6 from './day09/components/App6';
+import App7 from './day11/components/App7';
 
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
@@ -13,7 +15,7 @@ function App() {
   return (
     <div className = "App">
       {/* <h1>30 Days Of React</h1> */}
-      <App5 />
+      <App7 />
     </div>
   );
 }
